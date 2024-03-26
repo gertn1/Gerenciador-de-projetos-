@@ -1,11 +1,13 @@
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import NewProject from './components/pages/NewProject';
 import Company from './components/pages/Company';
 import Container from './components/layout/Container';
 import NavBar from './components/layout/NavBar';
+import Footer from './components/layout/Footer';
+import Projects from './components/pages/Projects';
 
 function App() {
   return (
@@ -14,11 +16,12 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Container customClass="min-height"> <Home /> </Container>}/>
-        <Route path="/company"element={<Container><Company /></Container>}/>
-        <Route path="/contact"element={<Container><Contact /></Container>}/>
-        <Route path="/newproject"element={<Container><NewProject /></Container>}/>
+        <Route path="/company"element={<Container customClass="min-height"><Company /></Container>}/>
+        <Route path="/projects"element={<Container customClass="min-height"><Projects/></Container>}/>
+        <Route path="/contact"element={<Container customClass="min-height"><Contact /></Container>}/>
+        <Route path="/newproject"element={<Container customClass="min-height"><NewProject /></Container>}/>
       </Routes>
-      <p>foote</p>
+     <Footer />
     </Router>
 
   );
