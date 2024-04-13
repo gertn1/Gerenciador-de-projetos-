@@ -11,6 +11,7 @@ Adição de Serviços: Os usuários podem adicionar diferentes serviços relacio
 Edição de Projetos: Os usuários têm a capacidade de editar informações de projetos existentes, como nome, descrição ou data de início.
 Edição de Serviços: Os usuários podem editar os detalhes dos serviços associados a um projeto, como nome do serviço, descrição ou custo.
 Tecnologias Utilizadas:
+
 Frontend: React
 Backend Simulado: db.json (JSON Server)
 Instruções para Execução:
@@ -18,7 +19,19 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 Clone o repositório do projeto.
 No terminal, navegue até o diretório do projeto.
 Para iniciar o frontend, execute o comando npm start.
-Para iniciar o backend simulado, execute o comando npm run backend.
+
+terminal: 
+cd inicioReact/costs  # Navega para o diretório do inicioReact/costs
+npm install   # Instala as dependências do frontend
+npm start     # Inicia o servidor de desenvolvimento do React
+Após executar esses comandos, o servidor de desenvolvimento do React será iniciado e você poderá acessar a aplicação no seu navegador em http://localhost:3000.
+
+Iniciar o Backend Simulado (JSON Server):
+Certifique-se de estar no diretório raiz do seu projeto.
+terminal: 
+npm run backend  # Inicia o servidor JSON Server
+você poderá acessar a aplicação no seu navegador em http://localhost:5000.
+
 Requisitos do Sistema:
 Navegador Web Moderno (Google Chrome, Mozilla Firefox, etc.)
 Node.js
